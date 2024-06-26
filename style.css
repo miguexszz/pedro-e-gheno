@@ -13,10 +13,27 @@ body {
 header {
   background: linear-gradient(90deg, #00c6ff, #0072ff);
   padding: 20px;
+  position: relative;
   width: 100%;
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px; /* Largura da logo */
+  height: auto;
+  border-radius: 50%; /* Tornando a logo circular */
+  border: 3px solid #fff; /* Borda branca ao redor da logo */
+  margin-right: 15px; /* Espaço entre a logo e o título */
 }
 
 header h1 {
@@ -176,6 +193,6 @@ footer a:hover {
   }
 
   nav ul li {
-    margin: 10px 0;
-  }
+    margin: 10px 0;
+  }
 }
